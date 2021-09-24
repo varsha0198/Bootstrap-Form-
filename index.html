@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .heading {
+            text-align: center;
+            border: 5px solid black;
+            background-color:rgba(18, 1, 56, 0.61);
+            color: white;
+            max-height: 100%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+       
+        .container{
+            padding-top: 40px;
+
+           
+        }
+        input:hover{
+            background-color: rgb(113, 155, 175);
+        }
+       
+        select:hover{
+            background-color: rgb(113, 155, 175);
+            
+        }
+        .submit{
+            background-color: black;
+        }
+      
+    </style>
+</head>
+
+<body style="background-color:rgb(198, 221, 218);" >
+   
+        <h1 class="heading">Registration Form</h1>
+       
+        <div class="container">
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="inputZip"><b>Registration No.</b></label>
+                        <input type="number" class="form-control" id="inputZip" placeholder="Registration no.">
+                    </div>
+                  
+                </div>
+                <div class="form-row">
+                   
+                    
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4"><b>First Name</b></label>
+                        <input type="text" class="form-control" placeholder="first name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4"><b>Last Name</b></label>
+                        <input type="text" class="form-control"  placeholder="last name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4"><b>Email</b></label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email id">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4"><b>Password</b></label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="password">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4"><b>Phone Number</b></label>
+                        <input type="number" class="form-control"  placeholder="phone number">
+                    </div>
+                    <div class="form-group col-md-6"> 
+                        <label for="inputPassword4"><b>Date of Birth</b></label>
+                        <input type="number text" class="form-control" id="inputPassword4" placeholder="date of birth">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress"><b>Address</b></label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                </div>
+               
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity"><b>City</b></label>
+                        <select id="inputState" class="form-control">
+                            <option selected> Choose</option>
+                            <option>Pune</option>
+                            <option>Vadodara</option>
+                            <option>Chennai</option>
+                            <option>Panaji</option>
+                        </select>    
+                        
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState"><b>State</b></label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose</option>
+                            <option>Maharashtra</option>
+                            <option>Gujarat</option>
+                            <option>Tamil Nadu</option>
+                            <option>Goa</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip"><b>Pin Number/Pin Code</b></label>
+                        <input type="number" class="form-control" id="inputZip">
+                    </div>
+                </div>
+              
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                           <b> Check me out</b>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary submit"><b>Sign in</b></button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
